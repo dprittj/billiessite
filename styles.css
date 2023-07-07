@@ -1,13 +1,38 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url("../cabin-copy.png");
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-color: #ddd;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 
+/* 
+==========================================
+CREATE CSS variables by declaring them with double dash marks! For example:
+
+:root{
+--nav-bar: blue;
+--text-color: black;
+--div-padding: 25px;
+--div-margin: 15 px;
 }
+
+...etc. To use a CSS variable on a certain element, call the CSS function var() with the desired variable as an argument. For example: 
+
+.child {
+  background-color: var(--nav-bar);
+}
+https://www.youtube.com/watch?v=oZPR_78wCnY
+============================================
+ */
+
+:root {
+  font-family: 'Kanit', sans-serif;
+  background-image: url("../cabin-copy.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ddd;
+  backdrop-filter: invert;
+}
+
 nav {
-    background: var(--clr-white);
+    background-color: #ddd;
+    background: transparent;
+    backdrop-filter: invert;
     height: 3rem;
     display: grid;
     align-items: center;
@@ -39,11 +64,6 @@ nav {
   nav a:hover {
     color: var(--clr-primary-5);
   }
-div {
-    background-color: transparent;
-    color: #fff;
-    font-size: 18px;
-}
 
 .heading {
     color: gold;
