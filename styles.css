@@ -29,8 +29,13 @@ https://www.youtube.com/watch?v=oZPR_78wCnY
   backdrop-filter: invert;
 }
 
-nav {
-    background-color: #ddd;
+nav{
+  background-color: black;
+  color: #ddd;
+  font-size: 20 px;
+}
+/* nav {
+    backgrund-color: #ddd;
     background: transparent;
     backdrop-filter: invert;
     height: 3rem;
@@ -63,7 +68,7 @@ nav {
   }
   nav a:hover {
     color: var(--clr-primary-5);
-  }
+  } */
 
 .heading {
     color: gold;
