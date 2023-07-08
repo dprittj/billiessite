@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 /* 
 ==========================================
@@ -22,18 +22,45 @@ https://www.youtube.com/watch?v=oZPR_78wCnY
 
 :root {
   font-family: 'Kanit', sans-serif;
-  background-image: url("../cabin-copy.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #ddd;
-  backdrop-filter: invert;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav{
-  background-color: black;
-  color: #ddd;
-  font-size: 20 px;
+body {
+    background-image: url("../cabin-copy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+header {
+  box-sizing: border-box;
+  background-color: rgba(211, 211, 211, 0.6);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  backdrop-filter: invert(90%);
+}
+
+nav {
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-flex;
+  padding: 0 30px;
+}
+
+.navbar li a {
+  transition: all 0.3 ease 0s;
+}
+
+.navbar li a:hover {
+  color: black;
+}
+
 /* nav {
     backgrund-color: #ddd;
     background: transparent;

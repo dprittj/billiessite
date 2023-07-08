@@ -1,0 +1,29 @@
+/* * {
+    background-image: url("../cabin-copy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+body {
+    background-image: url("../cabin-copy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter:invert(60%) */
+}
+
+.world{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-width: 4px;
+    border-color: yellow;
+    border-style: groove;
+    /* background-color:transparent; */
+    backdrop-filter: blur(50px); 
+}
+
+.hello{
+    color: lightsalmon;
+    background-color: transparent;
+    /* filter: blur(10px); */
+}
