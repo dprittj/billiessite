@@ -28,10 +28,18 @@ https://www.youtube.com/watch?v=oZPR_78wCnY
 }
 
 body {
+    display: inline;
     background-image: url("../cabin-copy.png");
     background-size: cover;
     background-repeat: no-repeat;
+
 }
+
+/* .bg-img {
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
 
 header {
   box-sizing: border-box;
@@ -43,7 +51,7 @@ header {
 }
 
 nav {
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   list-style: none;
 }
@@ -61,43 +69,22 @@ nav {
   color: black;
 }
 
-/* nav {
-    backgrund-color: #ddd;
-    background: transparent;
-    backdrop-filter: invert;
-    height: 3rem;
-    display: grid;
-    align-items: center;
-    box-shadow: var(--dark-shadow);
-  }
-  .nav-center {
-    width: 90vw;
-    max-width: var(--fixed-width);
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .nav-center h4 {
-    margin-bottom: 0;
-    color: var(--clr-primary-5);
-  }
-  .nav-links {
-    display: flex;
-  }
-  nav a {
-    text-transform: capitalize;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--clr-primary-1);
-    letter-spacing: var(--spacing);
-    margin-right: 1rem;
-  }
-  nav a:hover {
-    color: var(--clr-primary-5);
-  } */
+.sitehead {
+  justify-content: left;
+}
 
-.heading {
-    color: gold;
-    background-color: transparent;
+.intro {
+  font-size: 24px;
+  margin: 25px;
+  padding: 50px;
+  align-items:center;
+  justify-content:space-around;
+  display: flex;
+  flex-direction: column;
+  color: aquamarine;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em rgb(45, 142, 142);
+};
+
+.billielist {
+  font-size: 10px;
 }
