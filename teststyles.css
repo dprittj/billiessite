@@ -1,16 +1,117 @@
-/* * {
-    background-image: url("../cabin-copy.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
+/* 
+==========================================
+CREATE CSS variables by declaring them with double dash marks! For example:
 
-body {
-    background-image: url("../cabin-copy.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* filter:invert(60%) */
+:root{
+--nav-bar: blue;
+--text-color: black;
+--div-padding: 25px;
+--div-margin: 15 px;
 }
 
+...etc. To use a CSS variable on a certain element, call the CSS function var() with the desired variable as an argument. For example: 
+
+.child {
+  background-color: var(--nav-bar);
+}
+https://www.youtube.com/watch?v=oZPR_78wCnY
+============================================
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+/* 
+* {
+    background-image: url("../cabin-copy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+*/
+
+:root {
+  font-family: 'Kanit', sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    height:1000vh;
+    background-color: rgba(105, 105, 105, 0.61);
+    /* scroll-behavior: smooth;
+    display: inline;
+    background-image: url("../cabin-copy.png");
+    background-size: screen;
+    background-repeat: no-repeat; */
+}
+
+/* .bg-img {
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.background-cabin {
+    width: 100%;
+    height: 1000px;
+    background-position: center;
+    background-size: contain;
+    background-image: url("../cabin-copy.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+  box-sizing: border-box;
+  background-color: rgba(211, 211, 211, 0.6);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  backdrop-filter: invert(90%);
+}
+
+nav {
+  font-size: 18px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-flex;
+  padding: 0 30px;
+}
+
+.navbar li a {
+  transition: all 0.3 ease 0s;
+}
+
+.navbar li a:hover {
+  color: black;
+}
+
+/* .sitehead {
+  justify-content: left;
+} */
+
+.intro {
+  font-size: 24px;
+  margin: 25px;
+  padding: 50px;
+  align-items:center;
+  justify-content:space-around;
+  display: flex;
+  flex-direction: column;
+  color: aquamarine;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em rgb(45, 142, 142);
+};
+
+/* .billielist {
+  font-size: 10px;
+} */
+
+/* .april {
+  text-align: start;
+} */
 .world{
     box-sizing: border-box;
     margin: 0;

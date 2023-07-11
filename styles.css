@@ -28,9 +28,11 @@ https://www.youtube.com/watch?v=oZPR_78wCnY
 }
 
 body {
+    height: 1000vh;
+    scroll-behavior: smooth;
     display: inline;
     background-image: url("../cabin-copy.png");
-    background-size: cover;
+    background-size: screen;
     background-repeat: no-repeat;
 
 }
