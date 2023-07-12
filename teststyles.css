@@ -33,12 +33,13 @@ https://www.youtube.com/watch?v=oZPR_78wCnY
   text-decoration: none;
   margin: 0;
   padding: 0;
+  background-color: rgba(125, 125, 125, 0.6);
 }
 
 body {
     height:1000vh;
     position: relative;
-    background-color: #bcbcbc(105, 105, 105, 0.61);
+    /* background-color: rgba(211, 211, 211, 0.6); */
     /* scroll-behavior: smooth;
     display: inline;
     background-image: url("../cabin-copy.png");
@@ -64,10 +65,10 @@ body {
 
 header {
   position: fixed;
-  top: 0;
-  width: auto;
+  top: 8px;
+  width: 100%;
   box-sizing: content-box;
-  background-color: #adadad (0.6);
+  /* background-color: rgba(211, 211, 211, 0.6); */
   display: flex;
   justify-content: flex-end;
   align-items: center;
