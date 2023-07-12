@@ -37,7 +37,8 @@ https://www.youtube.com/watch?v=oZPR_78wCnY
 
 body {
     height:1000vh;
-    background-color: rgba(105, 105, 105, 0.61);
+    position: relative;
+    background-color: #bcbcbc(105, 105, 105, 0.61);
     /* scroll-behavior: smooth;
     display: inline;
     background-image: url("../cabin-copy.png");
@@ -62,12 +63,16 @@ body {
 }
 
 header {
-  box-sizing: border-box;
-  background-color: rgba(211, 211, 211, 0.6);
+  position: fixed;
+  top: 0;
+  width: auto;
+  box-sizing: content-box;
+  background-color: #adadad (0.6);
   display: flex;
   justify-content: flex-end;
   align-items: center;
   backdrop-filter: invert(90%);
+  
 }
 
 nav {
@@ -89,16 +94,16 @@ nav {
   color: black;
 }
 
-/* .sitehead {
+.sitehead {
   justify-content: left;
-} */
+}
 
 .intro {
   font-size: 24px;
   margin: 25px;
   padding: 50px;
-  align-items:center;
-  justify-content:space-around;
+  align-items: center;
+  justify-content: space-around;
   display: flex;
   flex-direction: column;
   color: aquamarine;
