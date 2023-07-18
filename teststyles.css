@@ -63,6 +63,7 @@ body {
 } */
 
 .background-cabin {
+    margin: 8px;
     border: 2px;
     border-color: var(--clr-k);
     width: 100%;
@@ -73,6 +74,31 @@ body {
     /* background-size: 75%; */
     background-attachment: fixed;
     background-repeat: no-repeat;
+    
+}
+
+#backsquareid {
+  /* color: var(--clr-k); */
+  height: 1000px;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  /* background-image: url("../cabin-copy.png"); */
+  /* background-size: 75%; */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.backsquare {
+  color: var(--clr-k);
+  height: 1000px;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  /* background-image: url("../cabin-copy.png"); */
+  /* background-size: 75%; */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -114,7 +140,7 @@ nav {
 
 #sitehead {
   margin-left: 8px;
-  color: whitesmoke;
+  color: var(--clr-prime);
 }
 
 .intro {
