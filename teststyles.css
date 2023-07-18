@@ -19,23 +19,13 @@ https://www.youtube.com/watch?v=oZPR_78wCnY
  */
 
  @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-
-/* 
-* {
-    background-image: url("../cabin-copy.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-} 
-*/
+ 
 
 :root {
   font-family: 'Kanit', sans-serif;
   text-decoration: none;
   margin: 0;
   padding: 0;
-  /* background-color: rgba(240, 32, 236, 0.89); */
-
-  /* color scheme: a three color scheme + black/white? */
   --clr-prime: rgba(20, 240, 220, .8);
   --clr-split: rgba(240, 240, 30, .9);
   --clr-accent: rgba(240, 30, 240, .7);
@@ -56,12 +46,6 @@ body {
     background-repeat: no-repeat; */
 }
 
-/* .bg-img {
-  display: flex;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
 .background-cabin {
     margin: 8px;
     border: 2px;
@@ -74,32 +58,31 @@ body {
     /* background-size: 75%; */
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
 }
 
-#backsquareid {
-  /* color: var(--clr-k); */
-  height: 1000px;
-  width: 100%;
-  background-position: center;
-  background-size: contain;
-  /* background-image: url("../cabin-copy.png"); */
-  /* background-size: 75%; */
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-.backsquare {
+/* #backsquareid {
   color: var(--clr-k);
   height: 1000px;
   width: 100%;
   background-position: center;
   background-size: contain;
-  /* background-image: url("../cabin-copy.png"); */
-  /* background-size: 75%; */
+  background-image: url("../cabin-copy.png");
+  background-size: 75%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-}
+} */
+
+/* .backsquare {
+  color: var(--clr-k);
+  height: 1000px;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../cabin-copy.png");
+  background-size: 75%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+} */
 
 header {
   position: fixed;
@@ -112,7 +95,6 @@ header {
   /* justify-content: flex-end; */
   align-items: center;
   backdrop-filter: invert(75%);
-  
 }
 
 nav {
