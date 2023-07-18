@@ -15,5 +15,9 @@ function declaredHello(){
 }
 
 btn.addEventListener('click', function(){
+
+    const div1 = document.getElementById("div1");
+    document.body.removeChild(div1, btn);
+
     return declaredHello();
 });
