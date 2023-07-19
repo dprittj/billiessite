@@ -31,19 +31,12 @@ https://www.youtube.com/watch?v=oZPR_78wCnY
   --clr-accent: rgba(240, 30, 240, .7);
   --clr-k: black;
   --clr-w: whitesmoke;
-
 }
 
 body {
     color: var(--clr-w);
     height:1000vh;
     position: relative;
-    /* background-color: rgba(211, 211, 211, 0.6); */
-    /* scroll-behavior: smooth;
-    display: inline;
-    background-image: url("../cabin-copy.png");
-    background-size: screen;
-    background-repeat: no-repeat; */
 }
 
 .background-cabin {
@@ -60,64 +53,37 @@ body {
     background-repeat: no-repeat;
 }
 
-/* #backsquareid {
-  color: var(--clr-k);
-  height: 1000px;
-  width: 100%;
-  background-position: center;
-  background-size: contain;
-  background-image: url("../cabin-copy.png");
-  background-size: 75%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-} */
-
-/* .backsquare {
-  color: var(--clr-k);
-  height: 1000px;
-  width: 100%;
-  background-position: center;
-  background-size: contain;
-  background-image: url("../cabin-copy.png");
-  background-size: 75%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-} */
-
 header {
   position: fixed;
   top: 8px;
   width: 100%;
   box-sizing: border-box;
   height: auto;
-  /* background-color: rgba(211, 211, 211, 0.6); */
   display: inline-flex;
-  /* justify-content: flex-end; */
   align-items: center;
   backdrop-filter: invert(75%);
 }
 
 nav {
-  font-size: 24px;
+  font-size: 22px;
   text-decoration: none;
   list-style: none;
 }
 
 .navbar li {
   color: var(--clr-prime);
-  display: inline-flex;
-  /* position: */
-  /* align-items: flex-end; */
-  /* justify-content: right; */
+  display: inline-block;
   padding: 0 30px;
 }
 
-.navbar li a {
-  transition: all 0.5s ease-in;
+.navbar a:visited,
+.navbar a:link {
+  color: var(--clr-split);
+  transition: all 0.3s ease-out;
 }
 
 .navbar li a:hover {
-  color: black;
+  color: var(--clr-prime);
 }
 
 #sitehead {

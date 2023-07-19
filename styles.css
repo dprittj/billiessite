@@ -37,13 +37,6 @@ body {
     color: var(--clr-w);
     height:1000vh;
     position: relative;
-    /* height: 1000vh;
-    scroll-behavior: smooth;
-    display: inline;
-    background-image: url("../cabin-copy.png");
-    background-size: screen;
-    background-repeat: no-repeat; */
-
 }
 
 .background-cabin {
@@ -66,30 +59,31 @@ header {
   width: 100%;
   box-sizing: border-box;
   height: auto;
-  /* background-color: rgba(211, 211, 211, 0.6); */
   display: inline-flex;
-  /* justify-content: flex-end; */
   align-items: center;
   backdrop-filter: invert(75%);
 }
 
 nav {
-  font-size: 18px;
+  font-size: 22px;
   text-decoration: none;
   list-style: none;
 }
 
 .navbar li {
-  display: inline-flex;
+  color: var(--clr-prime);
+  display: inline-block;
   padding: 0 30px;
 }
 
-/* .navbar li a {
-  transition: all 0.3 ease 0s;
-} */
+.navbar a:visited,
+.navbar a:link {
+  color: var(--clr-split);
+  transition: all 0.3s ease-out;
+}
 
 .navbar li a:hover {
-  color: black;
+  color: var(--clr-prime);
 }
 
 #sitehead {
