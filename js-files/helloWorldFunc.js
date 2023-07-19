@@ -10,14 +10,16 @@ function declaredHello(){
     newP.appendChild(returnHello);
     
     // const btnGreet = document.getElementById("declaredHello");
+    const div2 = document.getElementById("div2");
 
-    document.body.insertBefore(newP, h1);
+    document.body.insertBefore(newP, div2);
+    // document.body.insertAfter(newP, div2);
 }
 
 btn.addEventListener('click', function(){
 
-    const div1 = document.getElementById("div1");
-    document.body.removeChild(div1, btn);
+    const div2 = document.getElementById("div2");
+    btn.remove();
 
     return declaredHello();
 });

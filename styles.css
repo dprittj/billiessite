@@ -28,13 +28,15 @@ https://www.youtube.com/watch?v=oZPR_78wCnY
   padding: 0;
   --clr-prime: rgba(20, 240, 220, .8);
   --clr-split: rgba(240, 240, 30, .9);
-  --clr-accent: rgba(240, 30, 240, .7);
+  --clr-accent: rgba(240, 80, 240, 0.9);
   --clr-k: black;
   --clr-w: whitesmoke;
+  --clr-g: grey;
+
 }
 
 body {
-    color: var(--clr-w);
+    /* color: var(--clr-w); */
     height:1000vh;
     position: relative;
 }
@@ -101,4 +103,24 @@ nav {
   flex-direction: column;
   color: aquamarine;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em rgb(45, 142, 142);
-};
+}
+
+/* #h2 {
+  margin: 100 px;
+  padding: 10px;
+} */
+
+#div1, #div2{
+  margin: 100px;
+  /* padding-left: 10px; */
+}
+
+p {
+  font-size: 30px;
+  text-shadow: 2px 2px 1px var(--clr-k);
+  color: var(--clr-accent);
+  background-color: var(--clr-g);
+  margin: 100px;
+  padding: 5px 15px;
+  width: fit-content;
+}
