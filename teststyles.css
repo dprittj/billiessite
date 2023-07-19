@@ -112,9 +112,9 @@ nav {
   padding: 0 30px;
 }
 
-/* .navbar li a {
-  transition: all 0.3 ease 0s;
-} */
+.navbar li a {
+  transition: all 0.5s ease-in;
+}
 
 .navbar li a:hover {
   color: black;
