@@ -110,7 +110,10 @@ nav {
   padding: 10px;
 } */
 
-#div1, #div2{
+#div1, 
+#div2, 
+#div3,
+#div4{
   height: 50px;
   margin: 100px;
   /* padding-left: 10px; */
@@ -136,4 +139,9 @@ nav {
 
 .colorbox{
   background-color: var(--clr-k);
+}
+
+section{
+  margin: 100px;
+  padding: 0;
 }
