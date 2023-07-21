@@ -116,7 +116,7 @@ nav {
   /* padding-left: 10px; */
 }
 
-p {
+.newP {
   font-size: 30px;
   text-shadow: 2px 2px 1px var(--clr-k);
   color: var(--clr-accent);
