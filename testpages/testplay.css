@@ -1,0 +1,60 @@
+
+img {
+    width: 25%;
+    border: solid 2px red;
+}
+
+img[src="https://via.placeholder.com/150"]{
+    border: dotted 3px #39f;
+}
+
+.testplay, h1 {
+    border: solid 2px black;
+}
+
+#test-1 {
+    background-color: #eee;
+}
+
+#test-2 {
+    background-color: #bbb;
+}
+
+.testplay > p {
+    font-size: 1.25em;
+}
+
+.columns {
+    width: 100%;
+    border: solid 2px blue;
+}
+
+.columns > div {
+    width: 49.5%;
+    border: solid 2px black;
+    float: left;
+}
+
+.columns-2 {
+    border: solid 2px forestgreen;
+    display: flex;
+}
+
+.columns-2 > div {
+    border: solid 1px gold;
+    flex: 1;
+}
+
+.columns-3 {
+    border: solid 2px gray;
+    display: flex;
+}
+
+.columns-3 > div {
+    border: solid 1px orange;
+    flex: 1;
+}
+
+.columns-3 > div:nth-of-type(2) {
+    flex: 2;
+}

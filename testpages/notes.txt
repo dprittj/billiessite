@@ -1,0 +1,50 @@
+div elements are block level elements by default.
+
+use > to target child elements of a parent element in styles, ex: div > p targets all <p> elements of all <div> elements.
+
+Selectors:
+    element-name    {...}
+    .class-name {...}
+    #id-name    {...}
+    parent > child  {...}
+    list-item-1, list-item-2, etc.  {...}
+    element-name [attribute]    {...}
+
+inline elements only take up the space they need to be rendered within the browser and so display *in line* with one another, whereas block elements take up the full block width available of the browser
+
+using a browser's inspect tool, with elements selected, we can add style rules on-the-fly to test their appearance. 
+    NOTE: these styles are not permanently applied, so be sure to copy/pase any desired rules into the coding editor!
+
+BOX MODEL: Browsers interpret elements with 'The Box Model': 
+    this model reads values for various attributes of an element, including Margin, Border, Padding, and Content dimensions that apply to every element.
+
+    Margin: the space between the border of the element and everything else around the boundary of the element;
+
+    Border: self-explanatory;
+
+    Padding: space inside the element between the border and the content of the element.
+
+    Total element dimensions include these values: Actual dimensions of an element therefore are width=(2*Margin + 2*Border + 2*Padding + Content) * height=(2*Margin + 2*Border + 2*Padding + Content);
+
+Pseudo-classes: go to https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes to learn more
+
+Media Queries: allows you to target css rules to different deices, for example: desktop, mobile, and print. 
+    A good rule for designing for web (and creating styles that target different devices) is to design for mobile (ie smallest) first because it forces the designer to ensure the smallest format/dimensions's styles work before checking larger dimensions.
+
+    <meta name="viewport" content="width=device-width, inital-scale=1" />
+        --this meta tag tells the browser to render content to the width of the device on which the browser is displayed, and it sets the initial zoom setting to %100 (scale=1).
+
+        Media queries in css begin with @media, for example: @media print {...} are css rules that will only apply when the content is printed;
+            
+            ---Example:
+            @media screen and (min-width: 768px) {
+                .mobile {
+                display: none;
+                }
+            
+                .desktop {
+                display: block;
+                }
+            }
+
+            ---This example is a css media query that says at certain screen sizes, mobile css rules are hidden and desktop css rules are displayed.
