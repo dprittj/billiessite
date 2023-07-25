@@ -1,5 +1,12 @@
 
+:root {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img {
+    margin: 10px;
     width: 25%;
     border: solid 2px red;
 }
@@ -12,7 +19,17 @@ img[src="https://via.placeholder.com/150"]{
     border: solid 2px black;
 }
 
+.testplay {
+    display: flex;
+    flex: 1;
+}
+
+.testplay > p {
+    font-size: 1.25em;
+}
+
 #test-1 {
+    display: block;
     background-color: #eee;
 }
 
@@ -20,8 +37,8 @@ img[src="https://via.placeholder.com/150"]{
     background-color: #bbb;
 }
 
-.testplay > p {
-    font-size: 1.25em;
+#test-3 {
+    display: block;
 }
 
 .columns {
@@ -33,6 +50,7 @@ img[src="https://via.placeholder.com/150"]{
     width: 49.5%;
     border: solid 2px black;
     float: left;
+    background-color: #aaa;
 }
 
 .columns-2 {
@@ -43,6 +61,7 @@ img[src="https://via.placeholder.com/150"]{
 .columns-2 > div {
     border: solid 1px gold;
     flex: 1;
+    background-color: #ccc;
 }
 
 .columns-3 {
@@ -53,8 +72,11 @@ img[src="https://via.placeholder.com/150"]{
 .columns-3 > div {
     border: solid 1px orange;
     flex: 1;
+    background-color: #39f;
 }
 
 .columns-3 > div:nth-of-type(2) {
     flex: 2;
+    background-color: #eee;
+
 }
