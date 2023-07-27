@@ -6,52 +6,88 @@
     <link rel="stylesheet" href="site.css" type="text/css" />
     <title>Pies | Bethany's Pie Shop</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="pieindex.html">Beth's Home</a></li>
-                <li><a href="pies.html">Pies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="billie"><a href="../index.html">Back2Billie</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <aside><img src="piesimages/images/logo.png" alt="Bethany's Pie Shop"></aside>
-        <article>
-            <h1>Bethany's Pies</h1>
-           <section class="columns-desktop">
-                <div class="pie">
-                    <img src="piesimages/images/apple-pie.png" alt="Apple Pie">
-                    <div class="columns">
-                        <div class="title">Apple Pie</div>
-                        <div class="price">$12.95</div>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="pieindex.html">Beth's Home</a></li>
+                    <li><a href="pies.html">Pies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="billie"><a href="../index.html">Back2Billie</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <aside><img src="piesimages/images/logo.png" alt="Bethany's Pie Shop"></aside>
+            <article>
+                <h1>Bethany's Pies</h1>
+            <section class="columns-desktop">
+                    <div class="pie">
+                        <img src="piesimages/images/apple-pie.png" alt="Apple Pie">
+                        <div class="columns">
+                            <div class="title">Apple Pie</div>
+                            <div class="price">$12.95</div>
+                        </div>
+                        <p class="desc">Our Famous Apple Pie</p>
+                        <button data-order="apple-pie">Order</button>
                     </div>
-                    <p class="desc">Our Famous Apple Pie</p>
-                    <button data-order="apple-pie">Order</button>
-                </div>
-                <div class="pie">
-                    <img src="piesimages/images/cherry-pie.png" alt="Cherry Pie">
-                    <div class="columns">
-                        <div class="title">Cherry Pie</div>
-                        <div class="price">$15.95</div>
+                    <div class="pie">
+                        <img src="piesimages/images/cherry-pie.png" alt="Cherry Pie">
+                        <div class="columns">
+                            <div class="title">Cherry Pie</div>
+                            <div class="price">$15.95</div>
+                        </div>
+                        <p class="desc">The Summer Classic</p>
+                        <button data-order="cherry-pie">Order</button>
                     </div>
-                    <p class="desc">The Summer Classic</p>
-                    <button data-order="cherry-pie">Order</button>
-                </div>
-           </section>
-        </article>
-    </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="pieindex.html">Beth's Home</a></li>
-                <li><a href="pies.html">Pies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="billie"><a href="../index.html">Back2Billie</a></li>
-            </ul>
-        </nav>
-    </footer>
-</body>
+            </section>
+            </article>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="pieindex.html">Beth's Home</a></li>
+                    <li><a href="pies.html">Pies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="billie"><a href="../index.html">Back2Billie</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+    <script>
+        // this function runs the script here as the page loads
+        window.addEventListener("DOMContentLoaded", function(e){
+
+            // this accesses the buttons on the screen for pie ordering
+            const orderButtons = document.querySelectorAll("button[data-order]");
+            
+            // with a forEach loop on the buttons variable, the anonymous function has access to each indivual button
+            orderButtons.forEach(function(button){
+
+                // adds a click handler to each of the buttons
+                button.addEventListener("click", function (e){
+
+                    // currentTarget gives access to the HTML of the button; from mdn: "read-only property... identifies the current target for the event, as the event traverses the DOM... always refers to the element to which the event handler has been attached"
+                    const button = e.currentTarget;
+
+                    // gives access to parent element of button, allowing access to further data
+                    const container = button.parentNode;
+
+                    // this object will provide all relevant information of cutomer's order
+                    const order = {
+                        id: button.getAttribute("data-order"),
+                        title: container.querySelector(".title").innerText,
+                        price: container.querySelector(".price").innerText,
+                        desc: container.querySelector(".desc").innerText
+                    };
+
+                    localStorage.setItem("order", JSON.stringify(order));
+
+                    const url = window.location.href.replace("pies.html", "order.html");
+                    window.location.href = url;
+
+                })
+            })
+        });
+    </script>
 </html>

@@ -15,6 +15,8 @@ inline elements only take up the space they need to be rendered within the brows
 using a browser's inspect tool, with elements selected, we can add style rules on-the-fly to test their appearance. 
     NOTE: these styles are not permanently applied, so be sure to copy/pase any desired rules into the coding editor!
 
+querySelector() function expects css style selector in a string as the argument, ie. document.querySelector(".class-name"), or document.querySelector("#id-name"), etc.
+
 BOX MODEL: Browsers interpret elements with 'The Box Model': 
     this model reads values for various attributes of an element, including Margin, Border, Padding, and Content dimensions that apply to every element.
 
@@ -48,3 +50,45 @@ Media Queries: allows you to target css rules to different deices, for example: 
             }
 
             ---This example is a css media query that says at certain screen sizes, mobile css rules are hidden and desktop css rules are displayed.
+
+<script></script> tags often should be the last html element before the closing </body> element; since browsers load html from top to bottom, putting script tags at the bottom will prevent script errors where the cript interacts with the html/page/DOM...
+
+    --inside <script> tags should be a 'type' attribute for completeness, with the language set appropriately; for javascript, type="text/javascript", ie. <script src="file-source.js" type="text/javascript"></script>
+
+        --this tells the browser what language the script is coming in as.
+
+
+DOM: an in-memory hierarchical representation of elements making up page;
+
+addEventListener(" ", function(e) {...});
+    --window.addEventListener vs. element.addEventListener
+
+    --window.addEventListener("DOMContentLoaded", function(e) {...})
+        -DOMContentLoaded is the message from the browser to the computer that all of a page's elements are loaded in memory.
+
+Application Programming Interfaces (APIs): checkout https://developer.mozilla.org/docs/Web/API 
+
+Fallback: scripts of code that allow a browser to fall back to if built-in/API functionality is missing/broken etc,
+
+PolyFills: meant to mimic built in browser functionality by already using supported features; specifically built to have the functions, objects, properties, and behavior that work the same way the browser functionality is *supposed* to work (so that once the browser functionality is fully operative, polyfills may be removed without losing functionality).
+
+html5please.com lists native APIs for browsers and how well they are supported.
+
+localStorage API provides a place to save small amounts of data in the browser:
+
+    --localStorage.setItem("key", {value});
+
+    --let item = localStorage.getItem("key");
+
+            --these functions of the localStorage object allow the saving and retrieving of small amounts of data.
+
+Geolocation API determines the geographical location of a user, with explicit consent by the user.
+
+data-name
+ data- (aka "data dash [name]" attributes are special element attributes that allow the inclusion of custom information to an HTML element
+
+querySelector can be used on various container elements as well as the entire document, ie:
+
+    const container = button.parentNode;
+    ...
+    container.querySelector(".class-name");
