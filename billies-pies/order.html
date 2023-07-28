@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="site.css" type="text/css" />
     <style>
+
+        @media only screen and (min-width: 768px) {
+            article {
+                width: 350px;
+            }
+        }
         .input-group {
             margin-bottom: 20px;
         }
@@ -62,7 +68,8 @@
                 <p class="desc"></p>
             </div>
 
-            <form action="" method="post">
+            <form action="" method="POST">
+                <input type="hidden" id="pie-order" name="pie-order">
 
                 <div class="input-group">
                     <div><label for="first-name">First Name</label></div>
@@ -181,8 +188,11 @@
 
         if (order) {
             const pieOrder = JSON.parse(order);
-            
-            const pie = document.queryselector(".pie");
+
+            const orderInput = document.querySelector("#pie-order");
+            orderInput.value = order;
+
+            const pie = document.querySelector(".pie");
 
             const title = pie.querySelector(".title");
             const price = pie.querySelector(".price");
@@ -193,7 +203,7 @@
             desc.innerText = pieOrder.desc;
 
             const img = pie.querySelector("img");
-            img.setAttribute("src", 'images/${pieOrder.id}.png');
+            img.setAttribute("src", `piesimages/images/${pieOrder.id}.png`);
             img.setAttribute("alt", pieOrder.title);
         }
     });
