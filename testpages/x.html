@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Code Experiments</title>
+        <meta name="author" content="dprittj">
+        <meta name="description" content="Exploring coding concepts">
+        <meta name="viewport" content="height=device-height, initial-scale-1">
+
+        <style>
+            * {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: darkgray;
+            }
+
+            h1 {
+                font-weight: 600;
+                color: darkred;
+                text-decoration: none;
+            }
+
+            .lyric-1 {
+                color:blue
+            }
+
+            .lyric-2 {
+                color: greenyellow;
+            }
+
+            .lyric-3 {
+                color: blanchedalmond;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome<br>to<br>the<br>Internet</h1>
+        <div id="p-div">
+            <p class="lyric-1">have a look around</p>
+            <p class="lyric-2">anything that brain of yours</p>
+            <p class="lyric-3">can think of can be found</p>
+        </div>
+    </body>
+    <script>
+
+        window.addEventListener("DOMContentLoaded", function(e){
+
+            let screenHeight = window.screen.height;
+            console.log(screenHeight);
+
+            const p = document.createElement("p");
+
+            let div = document.getElementById("p-div");
+
+            for (let i=0; i < screenHeight; i++ ) {
+
+                let pNum = 0;
+                
+                let text = p.innerText;
+
+                text = "extra <p> number: " + pNum;
+                
+                const pClass = document.createAttribute("class");
+
+                pClass.value ="extra-p-"+pNum;
+
+                p.setAttributeNode(pClass);
+
+                document.body.appendChild(div, p);
+
+                // p.appendChild(document.getElementsByTagName("div"));
+
+                pNum+= 1;
+
+                if (pNum < 9) {console.log(pNum, p)};
+            };
+        });
+    </script>
+</html>
