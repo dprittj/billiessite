@@ -6,68 +6,49 @@
         <title>Bethany's Pie Shop 2.0</title>
         <meta name="author" content="Bethany's Pie Shop v 2.0">
         <meta name="description" content="Bethany's Pie Shop digital store front">
-        <style>
-            * {
-                margin: 0px;
-                padding: 0px;
-                background-color: #e6e4d9;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-
-            p {
-                margin: 16px;
-                padding: 8px;
-                text-align: justify;
-            }
-
-            h1, h2{
-                margin: 12px;
-                padding: 6px;
-                text-align: center;
-            }
-
-            #mainheader {
-                font-size: 40px;
-                color: #a593c2;
-            }
-
-            #promotion {
-                text-align: center;
-                align-content: center;
-            }
-
-            /* #promotion-img {
-                align-content: center;
-            } */
-
-            #copyright {
-                margin: 16px;
-                padding: 10px;
-            }
-
-        </style>
+        <link rel="stylesheet" href="styles-cleeren.css" type="text/css">
     </head>
     <body>
-        <h1 id="mainheader">Welcome to Bethany's Pie Shop!</h1>
-
-        <h2>Our History</h2>
-        <p> For many years, Bethany has been baking pies at her home.
-            <br><br>
-            In 2013, we opened our first store in St. Louis, MO, in the historic Dogtown neighborhood. People from all over the Midwest fell in love with soft cakes, heavenly cheesecakes, spicy apple pies, and more!<strong style="color: #a593c2"> Bethany's Pie Shop</strong> was nationally recognized in no time, and the cozy little Dogtown shop was quickly outgrown.
-        </p>
-        <p>
-            In 2015, while maintaining the original Dogtown storefront, <strong style="color: #a593c2"> Bethany's Pie Shop</strong> moved into a larger space to accomodate the rapidly expanding business of baking. From there, <strong style="color: #a593c2"> Bethany's Pie Shop</strong> was ready to take on the world, and so we launched our third storefront <em>here.</em>
-            <br><br>
-            With this new digital store, you can order a <strong style="color: #a593c2"> Bethany's Pie Shop</strong> treat <em><strong>from anywhere</strong></em> and have it sent <em><strong>to anywhere</strong></em> and you can do this <em><strong>whenever you feel like it!</strong></em>
-        </p>
-        <hr>
-        <br>
-        <div id="promotion"><h3>Our Weekly Promotions!</h3>
-        <h4>Cheesecake</h4>
-        $12.95 - serves 4<br>
-        <img id="promotion-img" src="cheesecake.jpg" alt="This week's promotion is a New York Style cheesecake" width="500" height="300" />
-        <br><br>
+        <header id="mainheader">
+            <nav>
+                Header goes here
+            </nav>
+        </header>
+        <div>
+            <aside id="left-menu">
+                <header>
+                    <h4 id="side-head">Browse our pies!</h4>
+                </header>
+                <input type="search" class="searchbox" placeholder="Search our store" />
+            </aside>
+            <main id="main">
+                <article>
+                    <header>
+                        <h1 id="article-head">Welcome to Bethany's Pie Shop!</h1>
+                    </header>
+                    <h3 id="history">Our History</h3>
+                    <p> For many years, <strong>Bethany</strong> has been baking pies at her home. But in 2013, we opened our first store in St. Louis, MO, in the historic Dogtown neighborhood. And quickly people from all over the Midwest fell in love with our soft cakes, heavenly cheesecakes, spicy apple pies, and so much more!
+                    <br><br>
+                    <strong style="color: #9a88c0"> Bethany's Pie Shop</strong> was nationally recognized in no time, and the cozy little Dogtown shop was quickly outgrown. In 2015, while maintaining the original Dogtown storefront, we moved into a larger space to accomodate the rapidly expanding business of baking.
+                    </p>
+                    <p>
+                    And now we're ready to take on the world, right from here. With this new digital store, you can order a <strong style="color: #9a88c0"> Bethany's Pie Shop</strong> treat <em><strong>from anywhere</strong></em> and have it sent <em><strong>to anywhere</strong></em> and you can do this <em><strong>whenever you feel like it!</strong></em>
+                    </p>
+                    <hr>
+                </article>
+                <section id="promotion">
+                    <h3>Our Weekly Promotion:</h3>
+                    <h4 id="promotion-item-name">Bethany's New York Style Cheesecake</h4>
+                    $12.95 - serves 4<br>
+                    <img id="promotion-img" src="cheesecake.jpg" alt="This week's promotion is a New York Style cheesecake" width="400" height="240" />
+                </section>
+            </main>
+            <footer>
+                <small id="copyright">© 2023 Bethany's Pie Shop.<br>All rights reserved.</small>
+                <small id="office">Our main office is located at:  <address>1234 Bakers Ave, St. Louis, MO</address></small>
+                <small id="dogtown">Our original storefront is at:  <address>6323 June St., Unit A, St. Louis, MO</address></small>
+                <small id="bakery">And our main bakery is at:  <address>314 Hi-Tamm Ave, St. Louis, MO</address></small>
+            </footer>
         </div>
-        <small id="copyright">© 2023 Bethany's Pie Shop. -- All rights reserved.</small>
     </body>
 </html>

@@ -1,0 +1,100 @@
+
+body {
+    margin-top: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e6e4d9;
+}
+
+#mainheader {
+    background-color: #a593c2d3;
+}
+
+nav {
+    height: 40px;
+    width: 1000px;
+    margin: 0 auto 0;
+}
+
+div {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main {
+    float: right;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+#article-head {
+    font-size: 36px;
+    color: #9a88c0;
+}
+
+#left-menu {
+    float: left;
+    width: 25%;
+    /* margin-bottom: 20px; */
+    background-color: #d6d2bf;
+    height: 1000px;;
+}
+
+#side-head {
+    margin-bottom: 0;
+    padding: 0;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.searchbox {
+    float: right;
+    padding: 5px;
+    margin: 10px 10px;
+    width: 90%;
+}
+
+p {
+    margin: 16px;
+    padding: 8px;
+    text-align: justify;
+}
+
+h1 {
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+}
+
+h3, h4 {
+    margin: 10px 20px 0;
+    padding: 5px;
+    text-align: center;
+}
+
+#history {
+    text-align: left;
+}
+
+#promotion {
+    text-align: center;
+    align-content: center;
+}
+
+#promotion-item-name {
+    color: #9a88c0;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    display: inline-flex;
+}
+
+#copyright, #office, #dogtown, #bakery {
+    flex: 1;
+}
