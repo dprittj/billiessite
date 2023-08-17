@@ -5,6 +5,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #e6e4d9;
+    background-image: url("images/pattern.png");
 }
 
 #mainheader {
@@ -34,12 +35,17 @@ div {
     color: #9a88c0;
 }
 
+figcaption {
+    font-size: smaller;
+    margin-left: 15px;
+}
+
 #left-menu {
     float: left;
     width: 25%;
     /* margin-bottom: 20px; */
     background-color: #d6d2bf;
-    height: 800px;;
+    height: 1200px;
 }
 
 #side-head {
@@ -57,8 +63,8 @@ div {
 }
 
 p {
-    margin: 16px;
-    padding: 8px;
+    margin: 15px;
+    /* padding: 8px; */
     text-align: justify;
 }
 
@@ -69,8 +75,8 @@ h1 {
 }
 
 h3, h4 {
-    margin: 10px 20px 0;
-    padding: 5px;
+    margin-left: 15px;
+    /* padding: 5px; */
     text-align: center;
 }
 
@@ -99,10 +105,6 @@ footer {
     flex: 1;
 }
 
-#logo {
- height: 100%;
-}
-
 /* header,
 nav,
 aside,
@@ -113,3 +115,20 @@ footer,
 figure {
     display: block;
 } */
+
+/* IMAGES */
+
+#header-logo {
+    height: 100%;
+   }
+
+#circle-logo {
+    margin: 5px;
+    padding: 0;
+    width: 95%;
+}
+
+#bethany {
+    margin-left: 15px;
+    width: 100%;
+}
