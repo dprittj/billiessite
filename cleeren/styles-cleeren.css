@@ -8,7 +8,7 @@ body {
 }
 
 #mainheader {
-    background-color: #a593c2d3;
+    background-color: #9a88c0;
 }
 
 nav {
@@ -39,7 +39,7 @@ div {
     width: 25%;
     /* margin-bottom: 20px; */
     background-color: #d6d2bf;
-    height: 1000px;;
+    height: 800px;;
 }
 
 #side-head {
@@ -98,3 +98,18 @@ footer {
 #copyright, #office, #dogtown, #bakery {
     flex: 1;
 }
+
+#logo {
+ height: 100%;
+}
+
+/* header,
+nav,
+aside,
+main,
+article,
+section,
+footer,
+figure {
+    display: block;
+} */
